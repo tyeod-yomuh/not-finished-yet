@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Not finished yet</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #f4f4f3;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, "Times New Roman", "Songti SC", serif;
+    overflow: hidden;
+  }
+  p {
+    margin: 0;
+    color: #b6b6b2;
+    font-size: clamp(1.4rem, 4.5vw, 3.2rem);
+    font-weight: 400;
+    letter-spacing: 0.35em;
+    text-indent: 0.35em;
+    animation: breathe 11s ease-in-out infinite;
+    user-select: none;
+  }
+  @keyframes breathe {
+    0%, 100% { opacity: 0.22; filter: blur(0px); }
+    45%      { opacity: 0.45; filter: blur(0.4px); }
+    55%      { opacity: 0.45; filter: blur(0.4px); }
+    73%      { opacity: 0.30; filter: blur(0px); }
+    74%      { opacity: 0.10; filter: blur(1.2px); }
+    75%      { opacity: 0.32; filter: blur(0px); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    p { animation: none; opacity: 0.35; }
+  }
+</style>
+</head>
+<body>
+  <p>Not finished yet</p>
+</body>
+</html>
